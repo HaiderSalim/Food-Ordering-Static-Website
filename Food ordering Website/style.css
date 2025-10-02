@@ -11,6 +11,12 @@
     font-weight: bolder;
 }
 
+.search_input:focus {
+    outline: none;
+    max-width: 200px;
+    transition: max-width 0.5s ease-in-out;
+}
+
 .fancy_text {
     background-image: linear-gradient(to right, #FFB800, #FF8A00);
     -webkit-background-clip: text;
@@ -29,8 +35,11 @@
 }
 
 .hero_section {
-    background-image: linear-gradient(to right, #FFB800, #FF8A00);
+    background: linear-gradient(to right, #FFB800, #FF8A00);
+    position: relative;
+    overflow: hidden;
 }
+
 
 .hero_btn{
     width: 120px;
@@ -67,7 +76,7 @@
 }
 
 .hero_input_text_bar:focus{
-    border: none;
+    outline: none;
 }
 
 .hero_search_btn{
@@ -80,4 +89,82 @@
     height: 50px;
     color: white;
     font-weight: 700;
+}
+
+.hero_noodle_image {
+    position: absolute;
+    width: 35%;
+    right: 5%; 
+    bottom: 0;
+    transform: translateY(20%);
+    filter: drop-shadow(-25px 25px 40px rgba(0, 0, 0, 0.45));
+    animation: noodle_move 3s ease-in-out infinite;
+}
+
+.card-text{
+    font-size: bold;
+    font-weight: 700;
+}
+
+.card_tag{
+    background-color: #f1722827;
+    color: #F17228;
+    font-size:medium;
+    font-weight: 700;
+    padding: 3px 7px 3px 7px;
+    border-radius: 8px;
+}
+
+.card_img_wrapper{
+    position: relative;
+}
+
+.card-img-top{
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #5e5e5e00;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 164px;
+    left: 0px;
+    background: #FFB800;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 0px 15px 0px 15px;
+    font-size: 30px;  
+}
+.discount-badge small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.tutorial_section{
+    background-image: linear-gradient(to bottom, #ffcf6725, #FDEDCA00);
+}
+
+.tutorial_card_img{
+    height: 200px; 
+    max-width: 150px; 
+    margin-left: 60px;
+    filter: drop-shadow(-15px 15px 70px #FFB800);
+}
+
+.tutorial_card_img:hover{
+    animation: tutorial_card_img_move 1s ease-in-out infinite;
+}
+
+
+@keyframes tutorial_card_img_move {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(-5%); }
+    100% { transform: translateY(0%); }
+}
+@keyframes noodle_move {
+    0% { transform: translateY(10%); }
+    50% { transform: translateY(14%); }
+    100% { transform: translateY(10%); }
 }

@@ -157,6 +157,40 @@
     animation: tutorial_card_img_move 1s ease-in-out infinite;
 }
 
+.arrow_btn{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background-color: #FFB20E;
+    border: none;
+    transform: translate(0%, 200%);
+    box-shadow: 10px 5px 40px #FFB20E;
+}
+
+.card{
+    border: none;
+}
+
+.populer_item_row{
+    overflow: hidden;
+}
+
+.populer_card_img{
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.populer_card_order_btn{
+    border-radius: 8px;
+    background-color: #F65900;
+    box-shadow: #F65900 0px 40px 50px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+}
 
 @keyframes tutorial_card_img_move {
     0% { transform: translateY(0%); }
